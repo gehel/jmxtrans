@@ -1,3 +1,8 @@
 language: java
-script: "ant debian"
+jdk:
+- openjdk7
 before_script: sudo apt-get -y update && sudo apt-get -y install devscripts build-essential
+branches:
+  except:
+  - travis
+  - gh-pages

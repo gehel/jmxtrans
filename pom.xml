@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>7</version>
+		<version>9</version>
 	</parent>
 
 	<groupId>org.jmxtrans.jmxtrans</groupId>
@@ -26,6 +26,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
 	<developers>
@@ -39,11 +40,16 @@
 			<name>Henri Gomez</name>
 			<email>henri.gomez@gmail.com</email>
 		</developer>
-		<developer>
-			<id>3</id>
-			<name>Cyrille Le Clerc</name>
-			<email>cleclerc@cloudbees.com</email>
-		</developer>
+        <developer>
+            <id>3</id>
+            <name>Cyrille Le Clerc</name>
+            <email>cleclerc@cloudbees.com</email>
+        </developer>
+        <developer>
+            <id>gehel</id>
+            <name>Guillaume Lederrey</name>
+            <email>guillaume.lederrey@gmail.com</email>
+        </developer>
 	</developers>
 
 	<licenses>
@@ -56,9 +62,6 @@
 
 	<build>
 
-		<sourceDirectory>src</sourceDirectory>
-		<testSourceDirectory>test</testSourceDirectory>
-
 		<plugins>
 
 			<plugin>
@@ -66,8 +69,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 
